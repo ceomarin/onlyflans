@@ -19,9 +19,6 @@ Configuración para una progressive web app, PWA.
 *Puedes conseguir copia de esté proyecto para uso en local desde terminal git clonando por HTTPS, SSH o descargando el Zip del proyecto.
 Para hacerlo por medio de comandos y desde https debes adicionar la ruta https://github.com/ceomarin/onlyflans.git al comando respectivo es* 
 
-## Live Demo📦
-
-Puedes ver el proyecto en funcionamiento gracias a GitHub Pages [aquí](https://ceomarin.github.io/onlyflans/)
 
 ## Recursos y Herramientas 🛠️
 
