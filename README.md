@@ -22,8 +22,6 @@ Para hacerlo por medio de comandos y desde https debes adicionar la ruta https:/
 
 ## Recursos y Herramientas 🛠️
 
-*Menciona las herramientas que utilizaste para crear tu proyecto*
-
 - [vscode](https://code.visualstudio.com/) - Editor de código para el desarrollo.
 - [Notion](https://www.notion.so/product) - Usado para documentar proceso y escribir con Markdown
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) - Biblioteca de estilos de código abierto version 5.1.3
