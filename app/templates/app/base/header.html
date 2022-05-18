@@ -1,0 +1,46 @@
+{% block 'header' %}
+{% load static %}
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-5" href="{% url 'home' %}">
+            <img src="{% static 'app/img/logo_black.png' %}" width="80" alt="logo_onlyflans">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <h2 class="ml-auto text-black pl-5">Blog de Flanes</h2>
+                <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="{%  url 'home' %}">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{%  url 'contacto' %}">contacto</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'agregar_producto' %}">agregar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'listar_productos' %}">listar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{%  url 'logout' %}">cerrar sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">@{{ user.username }}</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{%  url 'login' %}">publicar</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="{%  url 'registro' %}">registrate</a> -->
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+</header>
+{% endblock %}

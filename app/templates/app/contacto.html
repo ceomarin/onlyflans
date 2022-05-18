@@ -1,0 +1,22 @@
+{% extends 'app/base/base.html' %}
+
+{% block 'content' %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-left">Contactanos</h2><hr>
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{form | crispy }}
+                        <!-- <a href="{% url 'home' %}">ir a home</a> -->
+                        <input type="submit" value="enviar" class="btn btn-success float-right">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
